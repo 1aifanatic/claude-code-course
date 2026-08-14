@@ -1,0 +1,18 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local tooling output
+*.log
+*.tmp
+
+# RelayBoard dependencies and build output
+**/node_modules/
+**/dist/
+
+# Environment files; example files remain tracked
+.env
+.env.*
+!.env.example

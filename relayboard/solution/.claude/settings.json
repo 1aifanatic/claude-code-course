@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test *)",
+      "Bash(npm run typecheck *)",
+      "Bash(git status *)",
+      "Bash(git diff *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/check-secrets.mjs",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

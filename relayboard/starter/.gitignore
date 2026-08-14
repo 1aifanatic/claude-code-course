@@ -1,0 +1,6 @@
+node_modules/
+dist/
+data/incidents.json
+.env
+.env.*
+!.env.example

@@ -1,0 +1,8 @@
+{
+  "name": "relayboard-toolkit",
+  "version": "1.0.0",
+  "description": "Read-only RelayBoard fixture tools for the course MCP trust-boundary lab",
+  "author": {
+    "name": "Claude Code Course"
+  }
+}
